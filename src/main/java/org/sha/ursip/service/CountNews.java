@@ -18,13 +18,13 @@ public class CountNews {
 
     public List<WriteString> countNewsList(int Id) {
         ArrayList<WriteString> list = new ArrayList<>();
-        for (int j = 0; j < 10; j++) {
+        for (int j = 0; j < 11; j++) {
             if(articlesDAO.list().get(j).getTypeid()==Id) {
                 WriteString writeString = new WriteString();
                 writeString.setName(articlesDAO.list().get(j).getName());
                 int count = 0;
                 int count2 = 0;
-                for (int k = 0; k < 10; k++) {
+                for (int k = 0; k < 11; k++) {
                     if (articlesDAO.list().get(k).getTypeid()==4) {
                         for (int i=0; i < 4; i++) {
                             if(articlesDAO.list().
@@ -35,7 +35,7 @@ public class CountNews {
                         }
                     }
                 }
-                for (int k = 0; k < 10; k++) {
+                for (int k = 0; k < 11; k++) {
                     if (articlesDAO.list().get(k).getTypeid()==5) {
                         for (int i=0; i < 4; i++) {
                             if(articlesDAO.list().
